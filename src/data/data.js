@@ -1,0 +1,20 @@
+const data = [
+    {
+        id: 1,
+        title: 'Purpose and use of pulse oximeters',
+        postedBy: 'Suborna Fermi',
+        postedOn: '2021-05-15T13:45:12.542Z',
+        image: 'https://www.diagnosticcentres.in/uploads/blogpost/Untitled-1.jpg',
+        description: `At this very moment, pulse oximeter can easily be considered as one of the most necessary and useful gadgets that each and everyone would own. There are several reasons why the greater percentage of doctors and medical experts are suggesting to purchase at least one pulse oximeter per family during the concerning hours of pandemic. \n This small sized device can be more useful than you can even think of. The basic purpose of pulse oximeters is to help you get the exact amount of oxygen measured. This is the main reason why it is necessary. You just need to insert your finger in this device and it will display you the absolute amount of oxygen in your blood. As a matter of fact, the use and demand of pulse oximeters are rapidly increasing day by day. \nMost of the critical respiratory diseases come with certain symptoms. Knowingly, decreasing oxygen level in the blood is one of them. Undoubtedly, there lies the undeniable necessity of a pulse oximeter. Pulse oximeter can help you detect any sudden decrement of oxygen in your blood, which can help you determine the presence of deadly respiratory diseases like COPD or Covid-19 at the initial stage. As we all know, any disease can be easier to treat at the beginning stage as well as any of these respiratory diseases. \n It is always important to have a pulse oximeter at home as that can help each and every of your family member stay away from potential risk factors. No mountain sized costs are needed to buy one and best oximeters are available even at your nearest location including online store. Book yours now and get your oxygen levels measured.`
+    },
+    {
+        id: 2,
+        title: 'What is your normal oxygen level?',
+        postedBy: 'Suborna Fermi',
+        postedOn: '2021-10-18T13:45:12.542Z',
+        image: 'https://www.diagnosticcentres.in/uploads/blogpost/gettyimages-1216546578-5f3f65d3ce1a8442eca5108d9b0a9274308bdef9.jpg',
+        description: 'As a matter of fact, the red blood cells of our body carry a certain amount of oxygen. The oxygen level in our body signifies the amount of oxygen we are currently having in our blood. High oxygenation in the blood is mandatorily needed as it plays a very important role in so many functionalities. On the other hand, decreased amount of oxygen in the blood may give birth to so many kinds of physical complexions that may turn really hard to be treated at some points. \n The amount of oxygen that your blood cells carry compared to their complete capacity can be considered as your oxygen saturation. Undoubtedly, there lies the basic importance of using a pulse oximeter as that can help you get the exact oxygen saturation levels displayed. The oxygen level is also measured based on the percentage of oxygenated and non-oxygenated hemoglobins. If your blood cells are carrying 5% of non-oxygenated and 95% of oxygenated hemoglobin, then your SPo2 value is 95%. This is how to get the exact oxygen levels measured. \n There are so many types of activities that may impact your oxygen saturation and give birth to many critical physical problems. Undoubtedly, unhealthy habits like smoking is one of them. People who are having SPo2 values under 90 percent may face critical physical complexions like shortness of breath and irregular heart rates. Besides, frequent breathing difficulty and all types of respiratory illness is also very common if you are having a lower SPO2 level than normal. There lies the exact necessity of rapid monitoring. Purchase a pulse oximeter today to get your oxygen levels monitored in a proper manner or consult a medical expert today to fetch more necessary information in this regard.'
+    }
+]
+
+export default data;
