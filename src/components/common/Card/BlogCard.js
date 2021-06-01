@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import moment from 'moment';
+import { useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
         color:'#787878'
     },
     paragraph1: {
-        fontFamily: 'Open Sans, sans-serif',
+        fontFamily: 'PT Serif, serif',
         fontSize: '14px',
         color: 'black'
     }
@@ -34,9 +35,9 @@ const useStyles = makeStyles({
 
 export default function BlogCard({blog}) {
     const classes = useStyles();
-
-    return (
-        <Card className={classes.root}>
+    let history = useHistory();
+    return (   
+        <Card className={classes.root} onClick={() => history.push(`/blog/${blog.id}`)}>
             <CardActionArea>
                 <CardMedia
                     className={classes.media}

@@ -24,7 +24,7 @@ const useStyles = makeStyles({
         width: 'inherit'
     },
     paragraph1: {
-        fontFamily: 'Recursive, sans-serif',
+        fontFamily: 'PT Serif, serif',
         lineHeight: '1.5rem',
         fontSize: '18px',
         letterSpacing: '0.5px'
@@ -44,6 +44,7 @@ export default function BlogDetailPage(props) {
         <div>
             <CustomisedBreadcrumb title={blog.title}/>
             <Grid container spacing={2}>
+            <Grid item md={2}></Grid>
             <Grid item xs={12} md={1}>
                 <TimeDisplay time={blog.postedOn}/>
             </Grid>

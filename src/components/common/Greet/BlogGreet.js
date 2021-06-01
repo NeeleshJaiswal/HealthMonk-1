@@ -6,6 +6,7 @@ import TimeDisplay from '../TimeDisplay/TimeDisplay';
 const BlogGreet = (props) => {
     const component = data.map(item => (
         <Grid container key={item.id}>
+            <Grid item md={2}></Grid>
             <Grid item xs={12} md={1}>
                 <TimeDisplay time={item.postedOn}/>
             </Grid>

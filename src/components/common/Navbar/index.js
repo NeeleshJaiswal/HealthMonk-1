@@ -12,7 +12,7 @@ function Navbar({classes}) {
                     <MenuIcon />
                 </IconButton>
                 <Typography variant="h6" className={classes.title}>
-                    HealthMonk
+                    Health Squad
                 </Typography>
                 <Button color="inherit">Login</Button>
                 </Toolbar>
