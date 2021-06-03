@@ -5,6 +5,7 @@ import CustomisedBreadcrumb from './CustomisedBreadcrumb';
 import {Avatar, Grid, Typography} from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles';
 import moment from 'moment';
+import ReactHtmlParser from 'react-html-parser';
 
 const useStyles = makeStyles({
     root: {
@@ -20,8 +21,8 @@ const useStyles = makeStyles({
         color:'#787878'
     },
     image: {
-        height: '60vh',
-        width: 'inherit'
+        height: 'auto',
+        width: '100%'
     },
     paragraph1: {
         fontFamily: 'PT Serif, serif',
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
 export default function BlogDetailPage(props) {
     const classes = useStyles();
     const { id } = props.match.params;
+    // eslint-disable-next-line
     const blog = data.find(item => item.id == id);
     const desc = blog.description.split('\n').map(c => {
         return (
@@ -52,7 +54,8 @@ export default function BlogDetailPage(props) {
                 <Typography variant='h4'>{blog.title}</Typography>
                 <p className={classes.paragraph}>Posted by <span className={classes.span}>{blog.postedBy}</span>  Posted on <span className={classes.span}>{moment(blog.postedOn).format('MMMM Do YYYY')}</span></p>
                 <Avatar variant='square' className={classes.image} src={blog.image}/>
-                {desc}
+                <div className={classes.paragraph1}>{ReactHtmlParser(blog.description)}</div>
+                
             </Grid>
         </Grid>
         </div>       
