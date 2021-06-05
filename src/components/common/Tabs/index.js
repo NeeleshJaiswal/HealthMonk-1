@@ -19,8 +19,7 @@ function a11yProps(index) {
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
-    console.log(moment().format());
-    console.log(new Date().toISOString());
+    
     return (
       <div className={classes.root}>
         <AppBar position="static" color='transparent'>

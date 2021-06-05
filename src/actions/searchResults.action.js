@@ -15,3 +15,11 @@ export const setSearchResult = (word) => dispatch => {
         resolve();
     })    
 }
+
+export const setExactSearchResult = (word) => dispatch => {
+    return new Promise((resolve) => {
+        const matchedResults = data.filter(item => item.testName.toLowerCase() === word.toLowerCase());
+        dispatch(setSearchResultAction(matchedResults));
+        resolve();
+    })    
+}

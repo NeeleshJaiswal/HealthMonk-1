@@ -1,7 +1,7 @@
 import { Paper, Typography, Grid, Chip } from '@material-ui/core';
 import React from 'react'
 import { connect } from 'react-redux';
-import {Fade} from 'react-reveal'
+import { Fade } from 'react-reveal';
 import * as searchResultsSelector from '../../selector/searchResults';
 import { makeStyles } from '@material-ui/core/styles';
 import { getChipColor } from '../../utilities/labChip';
