@@ -4,11 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import ReduxThunk from 'redux-thunk';
 import rootReducer from './reducers';
+
+const middlewares = [ReduxThunk];
+const enhancers = [applyMiddleware(...middlewares)];
+const composeEnhancers = composeWithDevTools({trace: true});
+
+const initialState = {}
+
 const store = createStore(
-  rootReducer, /* preloadedState, */
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer,
+  initialState,
+  composeEnhancers(...enhancers)
  );
 ReactDOM.render(
   <Provider store={store}>
