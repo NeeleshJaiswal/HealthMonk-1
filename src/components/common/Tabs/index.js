@@ -5,6 +5,7 @@ import TabPanel from './TabPanel';
 import {AppBar, Tab, Tabs} from '@material-ui/core'
 import moment from 'moment';
 import Blog from '../Greet/Blog';
+import Home from '../../Home';
 
 function a11yProps(index) {
     return {
@@ -14,8 +15,7 @@ function a11yProps(index) {
   }
 
   function SimpleTabs({classes}) {
-    const [value, setValue] = React.useState(1);
-  
+    const [value, setValue] = React.useState(0);
     const handleChange = (event, newValue) => {
       setValue(newValue);
     };
@@ -30,8 +30,8 @@ function a11yProps(index) {
             <Tab label="ABOUT US" {...a11yProps(2)} />
           </Tabs>
         </AppBar>
-        <TabPanel value={value} index={0}>
-          Home
+        <TabPanel value={value} index={0} className={classes.tabs}>
+          <Home />
         </TabPanel>
         <TabPanel value={value} index={1}>
             <Blog/>

@@ -37,11 +37,6 @@ export default function BlogDetailPage(props) {
     const { id } = props.match.params;
     // eslint-disable-next-line
     const blog = data.find(item => item.id == id);
-    const desc = blog.description.split('\n').map(c => {
-        return (
-            <p className={classes.paragraph1}>{c}</p>
-        )
-    })
     return (
         <div>
             <CustomisedBreadcrumb title={blog.title}/>
