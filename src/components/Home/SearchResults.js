@@ -1,6 +1,7 @@
 import { Paper, Typography, Grid, Chip } from '@material-ui/core';
 import React from 'react'
 import { connect } from 'react-redux';
+import {Fade} from 'react-reveal'
 import * as searchResultsSelector from '../../selector/searchResults';
 import { makeStyles } from '@material-ui/core/styles';
 import { getChipColor } from '../../utilities/labChip';
@@ -24,6 +25,7 @@ function SearchResults({ searchResults }) {
     }
     const results = searchResults.map(item => (
         <Grid item xs={12} md={6} key={item.id}>
+            <Fade>
             <Paper className={classes.item}>
                 <Typography className={classes.title}>{item.testName}</Typography>
                 <Grid container justify="space-between" alignItems='flex-end'>
@@ -35,6 +37,7 @@ function SearchResults({ searchResults }) {
                     </Grid>
                 </Grid>
             </Paper>
+            </Fade>
         </Grid>
     ));
     if(Array.isArray(searchResults) && searchResults.length === 0) {
