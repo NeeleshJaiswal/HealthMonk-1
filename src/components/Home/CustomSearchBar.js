@@ -1,9 +1,8 @@
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import React from 'react'
 import { useState } from 'react';
 import Autosuggest from 'react-autosuggest';
 import data from '../../data/LabTest';
-import _ from 'lodash';
 import { makeStyles } from '@material-ui/core/styles';
 import "./theme.css";
 import SearchIcon from '@material-ui/icons/Search';

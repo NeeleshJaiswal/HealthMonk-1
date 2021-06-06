@@ -6,7 +6,13 @@ export const setSearchResultAction = createAction(SEARCH_REDUCER_ACTION_TYPES.PO
 
 export const setSearchResult = (word) => dispatch => {
     return new Promise((resolve) => {
-        const pattern = new RegExp('(\\w*'+word+'\\w*)','gi');
+        let pattern;
+        try {
+            pattern = new RegExp('(\\w*'+word+'\\w*)','gi');
+        }
+        catch (error) {
+            console.log(error);
+        }
         const matchedResults = data.filter(item => {
             const matches = item.testName.match(pattern);
             return matches !== null

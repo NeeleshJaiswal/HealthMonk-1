@@ -3,7 +3,6 @@ import styles from './style';
 import { withStyles } from '@material-ui/core/styles';
 import TabPanel from './TabPanel';
 import {AppBar, Tab, Tabs} from '@material-ui/core'
-import moment from 'moment';
 import Blog from '../Greet/Blog';
 import Home from '../../Home';
 

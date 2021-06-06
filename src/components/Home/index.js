@@ -5,7 +5,6 @@ import SearchBar from "material-ui-search-bar";
 import { Container } from '@material-ui/core';
 import { bindActionCreators } from 'redux';
 import * as searchResultsActions from '../../actions/searchResults.action';
-import * as searchResultsSelector from '../../selector/searchResults';
 import SearchResults from './SearchResults';
 import CustomSearchBar from './CustomSearchBar';
 
